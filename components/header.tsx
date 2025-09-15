@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex justify-between items-center">
           <Link 
             href="/" 
-            className="text-2xl font-bold text-gray-800 hover:text-blue-600 transition-colors"
+            className="text-2xl font-bold text-gray-800 hover:text-red-900 transition-colors"
             onClick={() => setIsMenuOpen(false)} // Fecha o menu ao clicar no logo
           >
             Transição em Preto e Branco
@@ -22,9 +22,9 @@ export default function Header() {
           {/* -- Navegação para Telas Maiores (Desktop) -- */}
           <nav className="hidden md:block">
             <ul className="flex items-center space-x-6">
-              <li><Link href="/" className="text-gray-600 hover:text-blue-600">Home</Link></li>
-              <li><Link href="/sobre" className="text-gray-600 hover:text-blue-600">Sobre</Link></li>
-              <li><Link href="/blogs" className="text-gray-600 hover:text-blue-600">Blog</Link></li>
+              <li><Link href="/" className="text-gray-600 hover:text-red-900">Home</Link></li>
+              <li><Link href="/sobre" className="text-gray-600 hover:text-red-900">Sobre</Link></li>
+              <li><Link href="/blogs" className="text-gray-600 hover:text-red-900">Blog</Link></li>
             </ul>
           </nav>
 
@@ -51,9 +51,9 @@ export default function Header() {
           <div className="md:hidden mt-4">
             <nav>
               <ul className="flex flex-col items-center space-y-4">
-                 <li><Link href="/" className="text-gray-600 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
-                 <li><Link href="/sobre" className="text-gray-600 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>Sobre</Link></li>
-                 <li><Link href="/blogs" className="text-gray-600 hover:text-blue-600" onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
+                 <li><Link href="/" className="text-gray-600 hover:text-red-900" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+                 <li><Link href="/sobre" className="text-gray-600 hover:text-red-900" onClick={() => setIsMenuOpen(false)}>Sobre</Link></li>
+                 <li><Link href="/blogs" className="text-gray-600 hover:text-red-900" onClick={() => setIsMenuOpen(false)}>Blog</Link></li>
               </ul>
             </nav>
           </div>
